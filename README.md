@@ -26,7 +26,7 @@ try{
 catch(InvalidGitUserException $e){
   echo $e->errorMessage();
 }
-
+```
 ##Requirements
 
 * [PHP](http://php.net/releases/5_4_0.php)
