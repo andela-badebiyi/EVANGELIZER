@@ -1,6 +1,6 @@
 <?php
 /**
- * Custom Exception class
+ * Custom Exception class.
  */
 namespace bd;
 
@@ -10,13 +10,14 @@ class InvalidGitUserException extends \Exception
     {
         parent::__construct($message, $code);
     }
-    
+
     public function errorMessage()
     {
         $errorMsg = "The Github username you entered doesn't exist";
+
         return $errorMsg;
     }
-    
+
     public function errorCode()
     {
         return 1;
