@@ -28,6 +28,9 @@ catch(InvalidGitUserException $e){
   echo $e->errorMessage();
 }
 ```
+##Installation
+From your root directory run `composer install`. This would install all the necessary dependencies
+
 ##Requirements
 
 * [PHP](http://php.net/releases/5_4_0.php)
