@@ -5,13 +5,13 @@
 
 #Checkpoint One
 ##Summary
-This is my second checkpoint project for my andela simulations. This project interfaces with the GITHub api and fetches a users GITHub data. It fetches the numbers of repos a user has and determines the users Evangelical Status based on his/her number of repos.
+This is my second checkpoint project for my andela simulations. This project interfaces with the GitHub API and fetches a users GitHub data. It fetches the numbers of repos a user has and determines the users Evangelical Status based on his/her number of repos.
 
 * 5 - 10 repos (Junior Evangelist)
 * 11 - 20 repos (Associate Evangelist)
 * > 21 repos (Senior Evangelist)
 
-The `src` directory contains two files. The first file is a class that handles the custom Exceptions that are generated and the second file is a class that interfaces with the GITHub api, fetches and processes the users data and returns the users status.
+The `src` directory contains two files. The first file is a class that handles the custom Exceptions that are generated and the second file is a class that interfaces with the GitHub API, fetches and processes the users data and returns the users status.
 
 ##Usage
 
