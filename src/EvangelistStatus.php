@@ -113,17 +113,14 @@ class EvangelistStatus
         }
     }
 
-    private function statusMessages($name){
-        return [
-            "junior_evangelist" => 
-                "You are just a Junior Evangelist: You need to work a little harder brother $name, 
+    private function statusMessages($name)
+    {
+        return array(
+            'junior_evangelist' => "You are just a Junior Evangelist: You need to work a little harder brother $name, 
                 do not relax, do not relent, Go out there and spread the gospel",
-            "associate_evangelist" => 
-                "You are an Associate Evangelist: Nice one brother $name but you can do even better, make us proud.",
-            "senior_evangelist" => 
-                "You are a Senior Evangelist: Great Work brother $name!! Your reward is in programming heaven.",
-            "default" => 
-                "You are unworthy of any ranking brother $name, you have failed us!!"
-        ];
+            'associate_evangelist' => "You are an Associate Evangelist: Nice one brother $name but you can do even better, make us proud.",
+            'senior_evangelist' => "You are a Senior Evangelist: Great Work brother $name!! Your reward is in programming heaven.",
+            'default' => "You are unworthy of any ranking brother $name, you have failed us!!",
+        );
     }
 }
