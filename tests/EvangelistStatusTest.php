@@ -27,6 +27,7 @@ class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
     
     /**
      * Tests that the evangelistStatus class outputs the retrieves the correct status
+     * @expectedException bd\InvalidGitUserException
      */
     public function testEvangelistStatus()
     {
@@ -42,6 +43,7 @@ class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
             "You are a Senior Evangelist: Great Work brother Anthony Nandaa!! Your reward is in programming heaven.",
             $evangelist->getStatus()
         );
+        $evangelist = new EvangelistStatus();
     }
     
     /**
