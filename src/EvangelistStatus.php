@@ -102,14 +102,15 @@ class EvangelistStatus
      */
     private function getUserStatus($repo_count, $name)
     {
+        $messages = $this->statusMessages($name);
         if ($repo_count >= 21) {
-            return $this->statusMessages($name)['senior_evangelist'];
+            return $messages['senior_evangelist'];
         } elseif ($repo_count >= 11) {
-            return $this->statusMessages($name)['associate_evangelist'];
+            return $messages['associate_evangelist'];
         } elseif ($repo_count >= 5) {
-            return $this->statusMessages($name)['junior_evangelist'];
+            return $messages['junior_evangelist'];
         } else {
-            return $this->statusMessages($name)['default'];
+            return $messages['default'];
         }
     }
 
