@@ -102,15 +102,28 @@ class EvangelistStatus
      */
     private function getUserStatus($repo_count, $name)
     {
-        if ($repo_count >= 5 && $repo_count <= 10) {
-            return "You are just a Junior Evangelist: You need to work a little harder brother $name, 
-            do not relax, do not relent, Go out there and spread the gospel";
-        } elseif ($repo_count >= 11 && $repo_count <= 20) {
-            return "You are an Associate Evangelist: Nice one brother $name but you can do even better, make us proud.";
-        } elseif ($repo_count >= 21) {
-            return "You are a Senior Evangelist: Great Work brother $name!! Your reward is in programming heaven.";
+        if ($repo_count >= 21) {
+            return $this->statusMessages($name)['senior_evangelist'];
+        } elseif ($repo_count >= 11) {
+            return $this->statusMessages($name)['associate_evangelist'];
+        } elseif ($repo_count >= 5) {
+            return $this->statusMessages($name)['junior_evangelist'];
         } else {
-            return "You are unworthy of any ranking brother $name, you have failed us!!";
+            return $this->statusMessages($name)['default'];
         }
+    }
+
+    private function statusMessages($name){
+        return [
+            "junior_evangelist" => 
+                "You are just a Junior Evangelist: You need to work a little harder brother $name, 
+                do not relax, do not relent, Go out there and spread the gospel",
+            "associate_evangelist" => 
+                "You are an Associate Evangelist: Nice one brother $name but you can do even better, make us proud.",
+            "senior_evangelist" => 
+                "You are a Senior Evangelist: Great Work brother $name!! Your reward is in programming heaven.",
+            "default" => 
+                "You are unworthy of any ranking brother $name, you have failed us!!"
+        ];
     }
 }
