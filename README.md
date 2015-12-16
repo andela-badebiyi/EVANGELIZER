@@ -1,6 +1,6 @@
 [![StyleCI](https://styleci.io/repos/47965981/shield)](https://styleci.io/repos/47965981)
 [![Circle CI](https://circleci.com/gh/andela-badebiyi/checkpoint-1b.svg?style=svg)](https://circleci.com/gh/andela-badebiyi/checkpoint-1b)
-[![Coverage Status](https://coveralls.io/repos/andela-badebiyi/checkpoint_one_bee/badge.svg?branch=developer&service=github)](https://coveralls.io/github/andela-badebiyi/checkpoint_one_bee?branch=developer)
+[![Coverage Status](https://coveralls.io/repos/andela-badebiyi/checkpoint-1b/badge.svg?branch=developer&service=github)](https://coveralls.io/github/andela-badebiyi/checkpoint-1b?branch=developer)
 [![Build Status](https://travis-ci.org/andela-badebiyi/checkpoint-1b.svg)](https://travis-ci.org/andela-badebiyi/checkpoint-1b)
 
 #Checkpoint One
