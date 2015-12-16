@@ -40,7 +40,7 @@ class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
      */
     public function testSeniorEvangelistStatus()
     {
-        $evangelist = new EvangelistStatus("andela-anandaa");
+        $evangelist = new EvangelistStatus("andela-badebiyi");
         $this->assertEquals(
             "You are a Senior Evangelist: Great Work brother Anthony Nandaa!! Your reward is in programming heaven.",
             $evangelist->getStatus()
