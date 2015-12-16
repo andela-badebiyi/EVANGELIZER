@@ -77,7 +77,7 @@ class EvangelistStatus
     {
         //set url and header parameters
         $url = 'https://api.github.com/users/'.$username;
-        $header = array('User-Agent: andela-badebiyi');
+        $header = array('User-Agent: $username');
 
         //connect to api and fetch user data in json format
         $connect = curl_init();
