@@ -3,7 +3,7 @@
  * This is a custom Exception class.
  * This is a custom exception class which is used by the EvangelistStatus class
  * it is thrown whenever an invalid github username is supplied to the 
- * EvangelistStatus class
+ * EvangelistStatus class.
  *
  * @author Adebiyi Bodunde
  */
@@ -12,7 +12,7 @@ namespace bd;
 class InvalidGitUserException extends \Exception
 {
     /**
-     * Overrides the parent constructor method 
+     * Overrides the parent constructor method.
      */
     public function __construct($message = null, $code = 1)
     {
@@ -28,10 +28,10 @@ class InvalidGitUserException extends \Exception
 
         return $errorMsg;
     }
+
     /**
      * @return int Returns the error code that accompanies the custom exception
      */
-
     public function errorCode()
     {
         return 1;
