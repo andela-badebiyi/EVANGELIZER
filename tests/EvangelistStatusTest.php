@@ -26,6 +26,28 @@ class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
     }
     
     /**
+     * Tests for an invalid github username
+     * @expectedException bd\InvalidGitUserException
+     */
+    public function testInvalidUsername()
+    {
+        $evangelist = new EvangelistStatus("andela-gjames1112121");
+        $evangelist->getStatus();
+    }
+    
+    /**
+     * Tests that the evangelistStatus class outputs the retrieves the correct status
+     */
+    public function testSeniorEvangelistStatus()
+    {
+        $evangelist = new EvangelistStatus("andela-anandaa");
+        $this->assertEquals(
+            "You are a Senior Evangelist: Great Work brother Anthony Nandaa!! Your reward is in programming heaven.",
+            $evangelist->getStatus()
+        );
+    }
+    
+    /**
      * Tests that the evangelistStatus class outputs the retrieves the correct status
      * @expectedException bd\InvalidGitUserException
      */
@@ -37,22 +59,7 @@ class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
             "You are unworthy of any ranking brother George James, you have failed us!!",
             $evangelist->getStatus()
         );
-        
-        $evangelist->setUser("andela-anandaa");
-        $this->assertEquals(
-            "You are a Senior Evangelist: Great Work brother Anthony Nandaa!! Your reward is in programming heaven.",
-            $evangelist->getStatus()
-        );
         $evangelist = new EvangelistStatus();
     }
     
-    /**
-     * Tests for an invalid github username
-     * @expectedException bd\InvalidGitUserException
-     */
-    public function testInvalidUsername()
-    {
-        $evangelist = new EvangelistStatus("andela-gjames1112121");
-        $evangelist->getStatus();
-    }
 }
