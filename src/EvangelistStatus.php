@@ -121,7 +121,7 @@ class EvangelistStatus
                 do not relax, do not relent, Go out there and spread the gospel",
             'associate_evangelist' => $name." you are an Associate Evangelist: Nice one beloved but you can do even better, make us proud.",
             'senior_evangelist' => $name." you are a Senior Evangelist: Great Work beloved!! Your reward is in programming heaven.",
-            'default' => "You are unworthy of any ranking brother $name, you have failed us!!",
+            'default' => $name." you are unworthy of any ranking beloved, you have failed us!!",
         );
     }
 }
