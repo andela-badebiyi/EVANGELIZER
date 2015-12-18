@@ -42,7 +42,7 @@ class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
     {
         $evangelist = new EvangelistStatus("andela-badebiyi");
         $this->assertEquals(
-            "You are unworthy of any ranking brother Adebiyi Bodunde, you have failed us!!",
+            "Adebiyi Bodunde you are unworthy of any ranking beloved, you have failed us!!",
             $evangelist->getStatus()
         );
     }
@@ -56,7 +56,7 @@ class EvangelistStatusTest extends \PHPUnit_Framework_TestCase
         $evangelist = new EvangelistStatus("andela-gjames");
         $this->assertInternalType('string', $evangelist->getStatus());
         $this->assertEquals(
-            "You are unworthy of any ranking brother George James, you have failed us!!",
+            "George James you are unworthy of any ranking beloved, you have failed us!!",
             $evangelist->getStatus()
         );
         $evangelist = new EvangelistStatus();
