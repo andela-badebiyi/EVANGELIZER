@@ -117,10 +117,10 @@ class EvangelistStatus
     private function statusMessages($name)
     {
         return array(
-            'junior_evangelist' => "You are just a Junior Evangelist: You need to work a little harder brother $name, 
+            'junior_evangelist' => $name." you are just a Junior Evangelist: You need to work a little harder beloved, 
                 do not relax, do not relent, Go out there and spread the gospel",
-            'associate_evangelist' => "You are an Associate Evangelist: Nice one brother $name but you can do even better, make us proud.",
-            'senior_evangelist' => "You are a Senior Evangelist: Great Work brother $name!! Your reward is in programming heaven.",
+            'associate_evangelist' => $name." you are an Associate Evangelist: Nice one beloved but you can do even better, make us proud.",
+            'senior_evangelist' => $name." you are a Senior Evangelist: Great Work beloved!! Your reward is in programming heaven.",
             'default' => "You are unworthy of any ranking brother $name, you have failed us!!",
         );
     }
