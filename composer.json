@@ -1,0 +1,12 @@
+{
+	"autoload": {
+		"psr-4": {
+			"bd\\": "src/",
+			"bd\\tests\\": "tests/"
+		}
+	},
+    "require-dev":{
+		"phpunit/phpunit": ">=4.8",
+		"satooshi/php-coveralls": "^0.6.1"
+	}
+}
