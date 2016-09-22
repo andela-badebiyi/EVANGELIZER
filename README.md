@@ -1,10 +1,9 @@
 [![StyleCI](https://styleci.io/repos/47965981/shield)](https://styleci.io/repos/47965981)
 [![Coverage Status](https://coveralls.io/repos/andela-badebiyi/checkpoint-1b/badge.svg?branch=developer&service=github)](https://coveralls.io/github/andela-badebiyi/checkpoint-1b?branch=developer)
-[![Build Status](https://travis-ci.org/andela-badebiyi/checkpoint-1b.svg)](https://travis-ci.org/andela-badebiyi/checkpoint-1b)
 
 #EVANGELIZER
 ##Summary
-This is my second checkpoint project for my andela simulations. This project interfaces with the GitHub API and fetches a users GitHub data. It fetches the numbers of repos a user has and determines the users Evangelical Status based on his/her number of repos.
+This project interfaces with the GitHub API and fetches a users GitHub data. It fetches the numbers of repos a user has and determines the users Evangelical Status based on his/her number of repos.
 
 * 5 - 10 repos (Junior Evangelist)
 * 11 - 20 repos (Associate Evangelist)
